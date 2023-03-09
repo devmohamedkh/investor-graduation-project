@@ -1,0 +1,250 @@
+.project-header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), attr(data-bg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ph-content {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+    bottom: -30px;
+    color: white;
+    font-size: 18px;
+}
+
+.ph-content-leaft {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ph-content-right {
+    margin-left: 30px;
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    align-content: flex-end;
+    margin-bottom: 1px;
+
+}
+
+.phcr p {
+    width: 70px;
+}
+
+.ph-content-right .btn {
+    background-color: #FF5100;
+    border: 1px solid #FF5100;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+}
+
+
+
+.ph-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+
+}
+
+.ph-content-right p {
+
+    color: white;
+    text-align: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 580px) {
+    .ph-content-right {
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+.ph {
+    margin-top: 50px;
+}
+
+.ph-progress {
+    width: 100%;
+    height: 30px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.ph-progress-bar-fill {
+    height: 30px;
+    background-color: #FF5100;
+    border-radius: 5px;
+}
+
+.ph-progress-bar-text {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    z-index: 3;
+}
+
+.ph-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.ph-info-content {
+    text-align: center;
+    border-left: 2px solid #cecccc;
+}
+
+.ph-info-content:first-child {
+    border-left: none;
+}
+
+.project-info-content {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.project-info-content-left {
+    width: 60%;
+}
+
+.project-info-content-left p {
+    color: black;
+
+}
+
+.project-info-content-right {
+    width: 40%;
+}
+
+.project-info-content-right ul {
+    list-style: none;
+    line-height: 1.5;
+
+}
+
+.project-info-content-right ul li::before {
+    content: "\2022";
+    color: #FF5100;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+
+.project-Idea {
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+.project-Idea p {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.project-idea-content {
+    line-height: 2.2;
+}
+
+.Documents a {
+    display: block;
+    margin-bottom: 15px;
+    color: #FF5100;
+
+}
+
+@media only screen and (max-width: 580px) {
+    .ph-info {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .ph-info-content {
+        border: none;
+        margin-bottom: 20px;
+
+    }
+
+    .project-info-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-info-content-left,
+    .project-info-content-right {
+        width: 100%;
+    }
+
+    .project-info-content-left {
+        margin: 5px;
+    }
+
+    .project-Idea {
+        max-width: 100%;
+    }
+
+}
+
+.invisoer-model-content {
+    width: 200px;
+}
+
+.model-close {
+
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 70%;
+    font-size: 16px;
+}
+
+.model-input {
+    width: 100%;
+    border: 1px solid #cecccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.model-btn {
+    background-color: #FF5100;
+    border: 1px solid #FF5100;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 40px;
+}
